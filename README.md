@@ -45,5 +45,8 @@ A simple web-based library management application built using **Python**, **Djan
 
 ![Alt text](img/1.jpeg)
 
+![Alt text](img/2.jpeg)
+
+![Alt text](img/3.jpeg)
 
 
