@@ -1,0 +1,24 @@
+{% extends 'library/base.html' %}
+{% block content %}
+  <h2>Book List</h2>
+  <form method="get">
+    <input type="text" name="q" placeholder="Search by title or author">
+    <button type="submit">Search</button>
+  </form>
+
+  <table>
+    <tr>
+      <th>Title</th><th>Authors</th><th>Stock</th>
+    </tr>
+    {% for book in books %}
+    <tr>
+      <td>{{ book.title }}</td>
+      <td>{{ book.authors }}</td>
+      <td>{{ book.stock }}</td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="3">No books found.</td></tr>
+    {% endfor %}
+  </table>
+  <a href="{% url 'book_add' %}"><button>Add New Book</button></a>
+{% endblock %}

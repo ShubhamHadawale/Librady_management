@@ -1,0 +1,9 @@
+{% extends 'library/base.html' %}
+{% block content %}
+  <h2>Import Books via API</h2>
+  <form method="get">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Import</button>
+  </form>
+{% endblock %}
