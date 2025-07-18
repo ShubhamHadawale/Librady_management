@@ -46,6 +46,6 @@ A simple web-based library management application built using **Python**, **Djan
 git clone https://github.com/yourusername/library-management.git
 cd library-management
 
-![Alt text](relative/path/to/image.png)
+![Alt text](img/1.png)
 
 
